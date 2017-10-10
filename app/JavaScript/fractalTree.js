@@ -1,6 +1,6 @@
 function setup() {
     //Create Canvas Area
-    canvas = createCanvas(windowWidth,windowHeight*0.8);
+    canvas = createCanvas(windowWidth,windowHeight*0.75);
     canvas.parent("fractalTree")
     
     //Create and Initialise Sliders to control branch angle, length and thickness
