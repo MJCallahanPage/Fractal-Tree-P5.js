@@ -46,7 +46,7 @@ function addTitle() {
     text("Matthew Page", width/2, 75);
 }
 
-function windowResized() { resizeCanvas(windowWidth, windowHeight*0.8); }
+function windowResized() { resizeCanvas(windowWidth, windowHeight*0.75); }
 
 function branch(len, thickness) {
     
