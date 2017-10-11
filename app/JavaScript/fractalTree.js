@@ -1,6 +1,8 @@
+let canvasFactor = 0.75;
+
 function setup() {
     //Create Canvas Area
-    canvas = createCanvas(windowWidth,windowHeight*0.75);
+    canvas = createCanvas(windowWidth,windowHeight*canvasFactor);
     canvas.parent("fractalTree")
     
     //Create and Initialise Sliders to control branch angle, length and thickness
@@ -18,9 +20,6 @@ function draw() {
     //Set Background Colour
     background(45);
     
-    //Add Title
-    addTitle();
-    
     //Set Origin to center bottom of Canvas
     translate(width/2,height);
     
@@ -35,18 +34,9 @@ function draw() {
     branch(len, thickness);
 }
 
-function addTitle() {
-    noStroke();
-    fill(255);
-    textSize(32);
-    textAlign(CENTER);
-    text("Fractal Tree", width/2, 50);
-    fill(200);
-    textSize(18);
-    text("Matthew Page", width/2, 75);
+function windowResized() { 
+    resizeCanvas(windowWidth, windowHeight*canvasFactor); 
 }
-
-function windowResized() { resizeCanvas(windowWidth, windowHeight*0.75); }
 
 function branch(len, thickness) {
     

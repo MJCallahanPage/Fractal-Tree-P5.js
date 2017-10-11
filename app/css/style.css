@@ -2,6 +2,38 @@ body {
     padding: 0;
     margin: auto;
     font-family: sans-serif;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0.5em;
+    color: #ccc;
+}
+
+a {
+    color: #4E93BF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8FBF1A;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#fractalTree {
+    position: relative;
 }
 
 .grass {
@@ -10,12 +42,21 @@ body {
     height: 1%;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 24%;
+    width: 100%;
+    text-align: center;
+    background-color:#1A5C82;
+}
+
 .controls {
     margin: 0 auto;
-    height: 24%;
-    background-color:#1A5C82;
-    text-align: center;
     color: #eee;
+    text-align: center;
+    max-width: 400px;
 }
 
 .control {
